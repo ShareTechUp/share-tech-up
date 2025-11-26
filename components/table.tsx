@@ -4,7 +4,7 @@ import Image from 'next/image'
 import RefreshButton from './refresh-button'
 import { seed } from '@/lib/seed'
 
-const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
+const sql = postgres(process.env.DB_POSTGRES_URL!, { ssl: "require" });
 
 export default async function Table() {
   let data
